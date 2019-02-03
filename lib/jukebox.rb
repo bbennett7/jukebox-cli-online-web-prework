@@ -47,14 +47,14 @@ def run(array)
   loop do 
     puts "Please enter a command:"
     user_input = gets.chomp
-    if user_input = "list"
+    if user_input == "list"
       list(array)
-    elsif user_input = "play"
+    elsif user_input == "play"
       play(array)
-    elsif user_input = "exit"
+    elsif user_input == "exit"
       break
-      exit_jukebox
     end
   end
+  exit_jukebox
 end
 
